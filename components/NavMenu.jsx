@@ -1,5 +1,5 @@
 "use client";
-import { Search, ShoppingCart } from "lucide-react";
+import { Search, ShoppingCart, SquareMenu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -15,57 +15,62 @@ export default function NavMenu() {
   };
   console.log(searchInput);
   return (
-    <div className="px-8 py-7 text-sleekGray">
+    <div className="px-4 md:px-8 py-7 text-sleekGray">
       <div className="">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <Image
             src={"/assets/icons/logo.svg"}
             width={160}
             height={50}
             alt="logo"
           />
-          <div className="flex w-[50%] justify-between">
-            <div className="flex items-center gap-4 font-bold">
-              <Image
-                src={"/assets/icons/truck.svg"}
-                width={32}
-                height={32}
-                alt="truck-logo"
-              />
-              <div>
-                <p className="2xl:text-[22px]">LEVERAGE</p>
-                <p className="text-xs 2xl:text-base">Fast Delivery</p>
+            <div className="hidden md:flex w-[50%] justify-between">
+              <div className="flex items-center gap-4 font-bold">
+                <Image
+                  src={"/assets/icons/truck.svg"}
+                  width={32}
+                  height={32}
+                  alt="truck-logo"
+                />
+                <div>
+                  <p className="2xl:text-[22px]">LEVERAGE</p>
+                  <p className="text-xs 2xl:text-base">Fast Delivery</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 font-bold">
+                <Image
+                  src={"/assets/icons/gift.svg"}
+                  width={32}
+                  height={32}
+                  alt="truck-logo"
+                />
+                <div>
+                  <p className="2xl:text-[22px]">BUILDING HOMES</p>
+                  <p className="text-xs 2xl:text-base">Best Gift Items</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 font-bold">
+                <Image
+                  src={"/assets/icons/call-icon.svg"}
+                  width={32}
+                  height={32}
+                  alt="call-logo"
+                />
+                <div>
+                  <p className="2xl:text-[22px]">ORDER NOW</p>
+                  <p className="text-xs 2xl:text-base">Contact Us</p>
+                </div>
               </div>
             </div>
-            <div className="flex items-center gap-4 font-bold">
-              <Image
-                src={"/assets/icons/gift.svg"}
-                width={32}
-                height={32}
-                alt="truck-logo"
-              />
-              <div>
-                <p className="2xl:text-[22px]">BUILDING HOMES</p>
-                <p className="text-xs 2xl:text-base">Best Gift Items</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 font-bold">
-              <Image
-                src={"/assets/icons/call-icon.svg"}
-                width={32}
-                height={32}
-                alt="call-logo"
-              />
-              <div>
-                <p className="2xl:text-[22px]">ORDER NOW</p>
-                <p className="text-xs 2xl:text-base">Contact Us</p>
-              </div>
-            </div>
+          <div>
+            <button className="md:hidden">
+            <SquareMenu strokeWidth={1} size={30} color="black" />
+            </button>
           </div>
         </div>
-        <div className="bg-[#D9D9D9] w-full h-[2px] blur-[3px] mt-7"></div>
+        <div className="hidden md:block bg-[#D9D9D9] w-full h-[2px] blur-[3px] mt-7"></div>
       </div>
-      <div className="flex justify-between">
+      <div className="hidden md:flex justify-between">
         <ul className="flex gap-8 text-black text-sm 2xl:text-[22px] font-bold py-5">
           <li>
             <Link href={"#home"}>HOME</Link>
@@ -99,7 +104,7 @@ export default function NavMenu() {
           </div>
         </div>
       </div>
-      <div className="bg-[#D9D9D9] w-full h-[2px] blur-[3px] mb-7"></div>
+      <div className="hidden md:block bg-[#D9D9D9] w-full h-[2px] blur-[3px] mb-7"></div>
     </div>
   );
 }
