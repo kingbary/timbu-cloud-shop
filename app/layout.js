@@ -1,10 +1,10 @@
 import { Lato } from "next/font/google";
 import "./globals.css";
 
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
-});
+// const lato = Lato({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "700", "900"],
+// });
 
 export const metadata = {
   title: "Timbu cloud shop",
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lato.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
