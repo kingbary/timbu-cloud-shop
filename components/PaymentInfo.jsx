@@ -107,7 +107,7 @@ export default function PaymentInfo() {
                 })}
                 type="text"
                 id="cvv"
-                placeholder="00000"
+                placeholder="123"
                 inputMode="numeric"
                 maxLength={3}
                 minLength={3}
