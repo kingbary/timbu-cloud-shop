@@ -70,6 +70,7 @@ export default function ProductSection() {
                 <>
                   <ProductCard
                     key={item.id}
+                    productLink={`/cart/${item.id}`}
                     imgSrc={item.imgSrc}
                     productName={item.productName}
                     currentPrice={item.currentPrice}
@@ -86,6 +87,7 @@ export default function ProductSection() {
                 <>
                   <ProductCard
                     key={item.id}
+                    productLink={`/cart/${item.id}`}
                     imgSrc={item.imgSrc}
                     productName={item.productName}
                     currentPrice={item.currentPrice}
