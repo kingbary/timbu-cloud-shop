@@ -7,6 +7,7 @@ import { useParams, useRouter } from "next/navigation";
 
 export default function ShoppingCart() {
   const productName = (localStorage.getItem("productName"));
+  const imgSrc = (localStorage.getItem("imgSrc"));
   const currentPrice = parseFloat(localStorage.getItem("currentPrice"));
   const shipingFee = (currentPrice * 0.3).toFixed(2);
   const tax = (currentPrice * 0.07).toFixed(2);
@@ -39,7 +40,7 @@ export default function ShoppingCart() {
             <div className="grid grid-cols-[2fr_1fr_1fr] items-center w-full text-s text-[#909090] font-medium">
               <div className="flex gap-4 items-center">
                 <Image
-                  src={"/assets/images/product-img/latest/1.png"}
+                  src={imgSrc}
                   width={200}
                   height={200}
                 />
