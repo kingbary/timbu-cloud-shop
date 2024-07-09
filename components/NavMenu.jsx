@@ -24,47 +24,47 @@ export default function NavMenu() {
             height={50}
             alt="logo"
           />
-            <div className="hidden md:flex w-[50%] justify-between">
-              <div className="flex items-center gap-4 font-bold">
-                <Image
-                  src={"/assets/icons/truck.svg"}
-                  width={32}
-                  height={32}
-                  alt="truck-logo"
-                />
-                <div>
-                  <p className="2xl:text-[22px]">LEVERAGE</p>
-                  <p className="text-xs 2xl:text-base">Fast Delivery</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 font-bold">
-                <Image
-                  src={"/assets/icons/gift.svg"}
-                  width={32}
-                  height={32}
-                  alt="truck-logo"
-                />
-                <div>
-                  <p className="2xl:text-[22px]">BUILDING HOMES</p>
-                  <p className="text-xs 2xl:text-base">Best Gift Items</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 font-bold">
-                <Image
-                  src={"/assets/icons/call-icon.svg"}
-                  width={32}
-                  height={32}
-                  alt="call-logo"
-                />
-                <div>
-                  <p className="2xl:text-[22px]">ORDER NOW</p>
-                  <p className="text-xs 2xl:text-base">Contact Us</p>
-                </div>
+          <div className="hidden md:flex w-[50%] justify-between">
+            <div className="flex items-center gap-4 font-bold">
+              <Image
+                src={"/assets/icons/truck.svg"}
+                width={32}
+                height={32}
+                alt="truck-logo"
+              />
+              <div>
+                <p className="2xl:text-[22px]">LEVERAGE</p>
+                <p className="text-xs 2xl:text-base">Fast Delivery</p>
               </div>
             </div>
+            <div className="flex items-center gap-4 font-bold">
+              <Image
+                src={"/assets/icons/gift.svg"}
+                width={32}
+                height={32}
+                alt="truck-logo"
+              />
+              <div>
+                <p className="2xl:text-[22px]">BUILDING HOMES</p>
+                <p className="text-xs 2xl:text-base">Best Gift Items</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 font-bold">
+              <Image
+                src={"/assets/icons/call-icon.svg"}
+                width={32}
+                height={32}
+                alt="call-logo"
+              />
+              <div>
+                <p className="2xl:text-[22px]">ORDER NOW</p>
+                <p className="text-xs 2xl:text-base">Contact Us</p>
+              </div>
+            </div>
+          </div>
           <div>
             <button className="md:hidden">
-            <SquareMenu strokeWidth={1} size={30} color="black" />
+              <SquareMenu strokeWidth={1} size={30} color="black" />
             </button>
           </div>
         </div>
@@ -73,13 +73,13 @@ export default function NavMenu() {
       <div className="hidden md:flex justify-between">
         <ul className="flex gap-8 text-black text-sm 2xl:text-[22px] font-bold py-5">
           <li>
-            <Link href={"#home"}>HOME</Link>
+            <Link href={"#home"} className="hover:underline">HOME</Link>
           </li>
           <li>
-            <Link href={"#join-us"}>JOIN US</Link>
+            <Link href={"#join-us"} className="hover:underline">JOIN US</Link>
           </li>
           <li>
-            <Link href={"#contact-us"}>CONTACT US</Link>
+            <Link href={"#contact-us"} className="hover:underline">CONTACT US</Link>
           </li>
         </ul>
         <div className="relative flex items-center gap-5">

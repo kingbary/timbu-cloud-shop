@@ -76,3 +76,13 @@
     font-family: "Lato", sans-serif;
   }
 }
+
+.text-style {
+  color: #d8474c;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
