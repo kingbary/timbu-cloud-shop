@@ -4,6 +4,7 @@ import NavMenu from "@/components/NavMenu";
 import NewProductBanner from "@/components/NewProductBanner";
 import Offers from "@/components/Offers";
 import ProductSection from "@/components/ProductSection";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </header>
       <main className="flex min-h-screen flex-col justify-between px-4 md:px-8 pt-8 pb-16">
         <Hero />
-        <ProductSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ProductSection />
+        </Suspense>
         <NewProductBanner />
         <Offers />
       </main>
