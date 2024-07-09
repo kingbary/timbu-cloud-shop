@@ -6,9 +6,8 @@ import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 
 export default function ShoppingCart() {
-  const productName = localStorage.getItem("productName");
-  const id = localStorage.getItem("productName");
-  const currentPrice = localStorage.getItem("currentPrice");
+  const productName = (localStorage.getItem("productName"));
+  const currentPrice = parseFloat(localStorage.getItem("currentPrice"));
   const shipingFee = (currentPrice * 0.3).toFixed(2);
   const tax = (currentPrice * 0.07).toFixed(2);
   const totalPrice = (

@@ -10,6 +10,10 @@ import { set } from "react-hook-form";
 export default function Checkout() {
   const searchParam = useSearchParams();
   const step = searchParam.get("step");
+  const productName = localStorage.getItem("productName");
+  const totalPrice = localStorage.getItem("totalPrice");
+  const currentPrice = localStorage.getItem("currentPrice");
+
   return (
     <div className="flex justify-between">
       <CheckoutLayout>
@@ -25,13 +29,13 @@ export default function Checkout() {
         </div>
         <div>
           <div className="flex justify-between items-center mb-4">
-            <p className="text-[#353638]">Chassidy Windsor</p>
-            <p className="text-[#353638] text-sm">$2300.00</p>
+            <p className="text-[#353638]">{productName}</p>
+            <p className="text-[#353638] text-sm">${currentPrice}</p>
           </div>
         </div>
         <div className="absolute flex justify-between bottom-10 w-[85%]">
           <p className="text-[#353638] text-lg font-bold">Total</p>
-          <p className="text-[#D8474C] text-lg font-bold">$2023.00</p>
+          <p className="text-[#D8474C] text-lg font-bold">${totalPrice}</p>
         </div>
       </div>
     </div>
