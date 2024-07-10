@@ -15,14 +15,14 @@ export default function Checkout() {
   const currentPrice = localStorage.getItem("currentPrice");
 
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col md:flex-row justify-between">
       <CheckoutLayout>
         {!step && <BasicInfo />}
         {step === "basicInfoSubmitted" && <ShippingInfo />}
         {step === "shippingInfoSubmitted" && <PaymentInfo />}
         {step === "paymentSuccessful" && <Confirmation />}
       </CheckoutLayout>
-      <div className="relative w-2/5 h-screen bg-[#F7F7F7] pt-20 px-6">
+      <div className="relative hidden md:block w-full md:w-2/5 md:h-screen bg-[#F7F7F7] pt-20 px-6">
         <div className="flex justify-between items-center mb-6">
           <p className="text-lg text-[#353638]">Items</p>
           <p className="text-xs text-[#909090]">Edit cart</p>

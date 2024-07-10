@@ -20,8 +20,8 @@ export default function BasicInfo() {
   };
   return (
     <div className="flex gap-20 mt-14">
-      <p className="font-medium text-lg text-[#909090]">Checkout</p>
-      <div className="w-1/2">
+      <p className="font-medium text-lg text-[#909090] hidden md:block">Checkout</p>
+      <div className="w-full md:w-1/2">
         <p className="text-2xl font-medium">Who is placing this order?</p>
         <form onSubmit={handleSubmit(submitForm)} className="mt-8">
           <div className="flex flex-col">
@@ -43,7 +43,7 @@ export default function BasicInfo() {
               </span>
             )}
           </div>
-          <div className="flex justify-between gap-4 mt-6">
+          <div className="flex flex-col md:flex-row justify-between gap-4 mt-6">
             <div className="flex flex-col">
               <label htmlFor="firstName" className="text-sm text-[#909090]">
                 First Name

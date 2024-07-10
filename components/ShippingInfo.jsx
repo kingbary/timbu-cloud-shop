@@ -18,8 +18,8 @@ export default function ShippingInfo() {
   };
   return (
     <div className="flex gap-20 mt-14">
-      <p className="font-medium text-lg text-[#909090]">Checkout</p>
-      <div className="w-1/2">
+      <p className="hidden md:block font-medium text-lg text-[#909090]">Checkout</p>
+      <div className="w-full md:w-1/2">
         <p className="text-2xl font-medium">
           Where would you like your order sent?
         </p>
@@ -62,7 +62,7 @@ export default function ShippingInfo() {
               </span>
             )}
           </div>
-          <div className="flex justify-between gap-4 mt-6">
+          <div className="flex flex-col md:flex-row justify-between gap-4 mt-6">
             <div className="flex flex-col">
               <label htmlFor="city" className="text-sm text-[#909090]">
                 City

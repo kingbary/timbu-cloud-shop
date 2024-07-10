@@ -1,13 +1,11 @@
 import React from "react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 export default function Confirmation() {
   const email = localStorage.getItem("email");
   const firstName = localStorage.getItem("firstName");
   return (
     <div className="flex flex-col gap-20 mt-14">
-      <div className="w-[70%]">
+      <div className="w-full md:w-[70%]">
         <p className="text-2xl font-medium text-[#353638]">
           Thank you for shopping with Timbu Store. You’ve made a great choice
         </p>

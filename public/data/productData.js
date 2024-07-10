@@ -16,7 +16,7 @@ export const latestProductData = [
     id: 4,
     imgSrc: "/assets/images/product-img/latest/4.png",
     productName: "Jacobsen Egg Chair",
-    currentPrice: "1,202.00",
+    currentPrice: "1202.00",
   },
   {
     id: 5,
@@ -28,13 +28,13 @@ export const latestProductData = [
     id: 6,
     imgSrc: "/assets/images/product-img/latest/6.png",
     productName: "Chassidy Windsor",
-    currentPrice: "1,202.00",
+    currentPrice: "1202.00",
   },
   {
     id: 7,
     imgSrc: "/assets/images/product-img/latest/7.png",
     productName: "Glen Plaid Suit",
-    currentPrice: "1,202.00",
+    currentPrice: "1202.00",
   },
   {
     id: 8,
